@@ -1,0 +1,15 @@
+# 核心依赖（必装）
+fastapi>=0.104.1          # Web服务框架（服务端用）
+uvicorn>=0.24.0           # 启动Web服务
+requests>=2.31.0          # 客户端发送API请求
+pydantic>=2.4.2           # 接口请求格式校验
+
+# 大模型推理依赖（4GB显存适配）
+torch>=2.1.0              # 核心推理框架
+transformers>=4.35.2      # 加载Qwen模型
+accelerate>=0.24.0        # 加速模型推理
+bitsandbytes>=0.41.1      # 4bit量化（低显存必备）
+
+# 辅助依赖
+json5>=0.9.14             # 兼容JSON解析（避免格式报错）
+retry>=0.9.2              # 接口请求重试（提升稳定性）
