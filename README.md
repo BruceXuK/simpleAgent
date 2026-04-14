@@ -21,6 +21,8 @@ simlpeAgent/
 ├── Qwen2.5-3B-Instruct  # 模型文件
 ├── api_server.py        # 模型服务端，提供工具调用接口
 ├── agent_demo.py        # 客户端，负责交互、工具执行与调度
+├── langchain_aggent_deepseek.py # 模型服务端，提供工具调用接口
+├── history_compress.py # 历史记录压缩
 ├── requirements.txt     # 项目依赖清单
 └── README.md            # 项目说明文档
 ```
